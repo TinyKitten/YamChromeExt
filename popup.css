@@ -1,0 +1,32 @@
+body {
+  background: #282c37;
+  color: #fff;
+  padding: 8px;
+}
+#url {
+  background: #2b90d9;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 1px;
+  transition: 0.25s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+#url:hover {
+  box-shadow: 0 0 24px rgba(0, 0, 0, .75);
+}
+#submit {
+  background: #555;
+  font-size: 1rem;
+  color: #fff;
+  border: none;
+  border-radius: 1px;
+  margin-top: 8px;
+  width: 100%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#submit:hover {
+  box-shadow: 0 0 24px rgba(0, 0, 0, .75);
+}
