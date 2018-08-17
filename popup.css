@@ -3,19 +3,39 @@ body {
   color: #fff;
   padding: 8px;
 }
-#url {
-  background: #2b90d9;
-  padding: 12px;
+#text {
+  background: #fff;
+  padding: 8px;
   font-size: 1rem;
   border-radius: 1px;
   transition: 0.25s;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  border: none;
+  resize: none;
+  width: 210px;
+  height: 64px;
+  word-break: break-all;
+  line-height: 1.2;
 }
-#url:hover {
+#text:hover {
+  box-shadow: 0 0 24px rgba(0, 0, 0, .75);
+}
+#instance {
+  background: #fff;
+  width: 210px;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 1px;
+  transition: 0.25s;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 8px;
+  border: none;
+}
+#instance:hover {
   box-shadow: 0 0 24px rgba(0, 0, 0, .75);
 }
 #submit {
-  background: #555;
+  background: #2b90d9;
   font-size: 1rem;
   color: #fff;
   border: none;
