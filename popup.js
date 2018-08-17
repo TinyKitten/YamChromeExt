@@ -9,11 +9,5 @@ window.onload = () => {
   });
 };
 function openYam(title, url) {
-  chrome.tabs.query({ active: true, currentWindow: true }, tabs => {
-    const tabID = tabs[0].id;
-    if (tabID === undefined) {
-      return;
-    }
-    chrome.tabs.update(tabID, {url: `https://yam.tinykitten.me/post?text=${title} - ${url}`});
-  });
+  chrome.tabs.create({url: `https://yam.tinykitten.me/post?text=${title} - ${url}`});
 }
