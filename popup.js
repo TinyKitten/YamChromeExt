@@ -9,5 +9,5 @@ window.onload = () => {
   });
 };
 function openYam(title, url) {
-  chrome.tabs.create({url: `https://yam.tinykitten.me/post?text=${title} - ${url}`});
+  chrome.tabs.create({url: `https://yam.tinykitten.me/post?text=${encodeURIComponent(title)} - ${encodeURIComponent(url)}`});
 }
