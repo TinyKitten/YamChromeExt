@@ -3,4 +3,5 @@
 自分でインストールしてよしなに使ってください。
 
 ## Yamとは
-[https://github.com/TinyKitten/Yam](https://github.com/TinyKitten/Yam)
+
+[ナチュラルにマストドンにシェアするアレ](https://github.com/TinyKitten/Yam)
