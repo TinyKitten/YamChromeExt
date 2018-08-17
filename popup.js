@@ -9,12 +9,12 @@ window.onload = () => {
     var btn = document.getElementById('submit');
     btn.onclick = () => {
       if (textElem.value !== '' && instanceElem.value !== '') {
-        openYam(instanceElem.value, tab.title, tab.url);
+        openYam(instanceElem.value, textElem.value);
         chrome.storage.local.set({'lastInstance': instanceElem.value});
       }
     };  
   });
 };
-function openYam(instance, title, url) {
-  chrome.tabs.create({url: `https://yam.tinykitten.me/post?instance=${instance}&text=${encodeURIComponent(title)} - ${encodeURIComponent(url)}`});
+function openYam(instance, body) {
+  chrome.tabs.create({url: `https://yam.tinykitten.me/post?instance=${instance}&text=${encodeURIComponent(body)}`});
 }
